@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navigation">
+            <ul class="navigation__item">
+                <li class="navigation__list">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"><i class="fas fa-apple-alt"></i></span>
+                        <span class="navigation__title"><h2>Brand Name</h2></span>
+                    </a>
+                </li>
+                <li class="navigation__list">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"><i class="fas fa-home"></i></span>
+                        <span class="navigation__title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="navigation__list">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"><i class="fas fa-user"></i></span>
+                        <span class="navigation__title">Customers</span>
+                    </a>
+                </li>
+                <li class="navigation__list">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"><i class="fas fa-comment"></i></span>
+                        <span class="navigation__title">Message</span>
+                    </a>
+                </li>
+                <li class="navigation__list">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"><i class="fas fa-question-circle"></i></span>
+                        <span class="navigation__title">Help</span>
+                    </a>
+                </li>
+                <li class="navigation__list">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"><i class="fas fa-cog"></i></span>
+                        <span class="navigation__title">Setting</span>
+                    </a>
+                </li>
+                <li class="navigation__list">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"><i class="fas fa-lock"></i></span>
+                        <span class="navigation__title">Password</span>
+                    </a>
+                </li>
+                <li class="navigation__list">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="navigation__title">Sign Up</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Main Start -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="topbar__search">
+                    <label>
+                        <input type="text" placeholder="Search Here">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="topbar__user">
+                    <img src="images/image2.jpg">
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="cardBox__card">
+                    <div>
+                        <span class="cardBox__numbers">1132</span>
+                        <span class="cardBox__name">Daily View</span>
+                    </div>
+                    <div class="cardBox__icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="cardBox__card">
+                    <div>
+                        <span class="cardBox__numbers">78</span>
+                        <span class="cardBox__name">Sales</span>
+                    </div>
+                    <div class="cardBox__icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="cardBox__card">
+                    <div>
+                        <span class="cardBox__numbers">213</span>
+                        <span class="cardBox__name">Comments</span>
+                    </div>
+                    <div class="cardBox__icon">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                </div>
+                <div class="cardBox__card">
+                    <div>
+                        <span class="cardBox__numbers">$23,522</span>
+                        <span class="cardBox__name">Earning</span>
+                    </div>
+                    <div class="cardBox__icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Details Start -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr class="header__tr">
+                                <td class="header__td">Name</td>
+                                <td class="header__td">Price</td>
+                                <td class="header__td">Payments</td>
+                                <td class="header__td">Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="body__tr">
+                                <td class="body__td">Star Refrigerator</td>
+                                <td class="body__td">$2000</td>
+                                <td class="body__td">Paid</td>
+                                <td class="body__td"><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">Window Coolers</td>
+                                <td class="body__td">$2000</td>
+                                <td class="body__td">Due</td>
+                                <td class="body__td"><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">Speakers</td>
+                                <td class="body__td">$150</td>
+                                <td class="body__td">Refund</td>
+                                <td class="body__td"><span class="status return">Return</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">Hp Laptop</td>
+                                <td class="body__td">$2000</td>
+                                <td class="body__td">Process</td>
+                                <td class="body__td"><span class="status inprogress">Inprogress</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">Apple Laptop</td>
+                                <td class="body__td">$3500</td>
+                                <td class="body__td">Due</td>
+                                <td class="body__td"><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">iPhone</td>
+                                <td class="body__td">$2300</td>
+                                <td class="body__td">Paid</td>
+                                <td class="body__td"><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">Star Refrigerator</td>
+                                <td class="body__td">$2000</td>
+                                <td class="body__td">Paid</td>
+                                <td class="body__td"><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">Window Coolers</td>
+                                <td class="body__td">$2000</td>
+                                <td class="body__td">Due</td>
+                                <td class="body__td"><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">Speakers</td>
+                                <td class="body__td">$150</td>
+                                <td class="body__td">Refund</td>
+                                <td class="body__td"><span class="status return">Return</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">Hp Laptop</td>
+                                <td class="body__td">$2000</td>
+                                <td class="body__td">Process</td>
+                                <td class="body__td"><span class="status inprogress">Inprogress</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">Apple Laptop</td>
+                                <td class="body__td">$3500</td>
+                                <td class="body__td">Due</td>
+                                <td class="body__td"><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">iPhone</td>
+                                <td class="body__td">$2300</td>
+                                <td class="body__td">Paid</td>
+                                <td class="body__td"><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr class="body__tr">
+                                <td class="body__td">Hp Laptop</td>
+                                <td class="body__td">$2000</td>
+                                <td class="body__td">Process</td>
+                                <td class="body__td"><span class="status inprogress">Inprogress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><div class="recentCustomers__img"><img src="images/image1.jpg"></div></td>
+                                <td><h4>David<span>Italy</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td><div class="recentCustomers__img"><img src="images/image2.jpg"></div></td>
+                                <td><h4>Neymar<span>England</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td><div class="recentCustomers__img"><img src="images/image3.jpg"></div></td>
+                                <td><h4>Lucio<span>United State</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td><div class="recentCustomers__img"><img src="images/image4.jpg"></div></td>
+                                <td><h4>Ishaq<span>Bangladesh</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td><div class="recentCustomers__img"><img src="images/image5.jpg"></div></td>
+                                <td><h4>Dhone<span>India</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td><div class="recentCustomers__img"><img src="images/image6.jpg"></div></td>
+                                <td><h4>Razzak<span>Pakistan</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td><div class="recentCustomers__img"><img src="images/image7.jpg"></div></td>
+                                <td><h4>Isabelli<span>Canada</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td><div class="recentCustomers__img"><img src="images/image8.jpg"></div></td>
+                                <td><h4>Tram<span>United State</span></h4></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Details End -->
+        </div>
+        <!-- Main End -->
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

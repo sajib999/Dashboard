@@ -1,0 +1,53 @@
+.cardBox {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.3rem;
+    padding: 2rem;
+
+    &__card {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        background-color: $coolGray-700;
+        padding: 2rem;
+        cursor: pointer;
+        color: $coolGray-300;
+        box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+        
+
+    }
+    &__numbers {
+        font-size: 2rem;
+        font-weight: 500;
+        transition: 0.3s;
+        
+        &:hover {
+            color: $teal-500;
+        }
+
+    }
+    &__name {
+        font-size: 1rem;
+        font-weight: 400;
+        display: block;
+        margin-top: 1.3rem;
+        transition: 0.3s;
+
+        &:hover {
+            color: $teal-500;
+        }
+
+    }
+    &__icon {
+        font-size: 2rem;
+        font-weight: 600;
+        transition: 0.3s;
+
+        &:hover {
+            color: $teal-500;
+        }
+
+    }
+}

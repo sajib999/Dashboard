@@ -1,0 +1,140 @@
+.details {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+
+    .recentOrders {
+        position: relative;
+        padding: 2rem;
+        min-height: 30rem;
+        background: $coolGray-700;
+    
+
+        .cardHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4rem;
+    
+        }
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: $coolGray-300;
+    
+        }
+        .btn {
+            background-color: $coolGray-500;
+            color: $coolGray-200;
+            padding: 0.3rem 0.9rem;
+            border-radius: 0.3rem;
+    
+        }
+        table {
+            position: relative;
+            border-collapse: collapse;
+            margin-top: 0.9rem;
+    
+        }
+        thead {
+    
+        }
+        .header__tr {
+            border-bottom: 1px solid $coolGray-200;
+            width: 100%;
+    
+        }
+        .header__td {
+            font-weight: 600;
+            padding-bottom: 0.9rem;
+            width: 100%;
+            color: $coolGray-300;
+            
+            
+
+            &:first-child {
+                text-align: left;
+            }
+            &:nth-child(2) {
+                text-align: center;
+                padding-right: 2rem;
+            }
+
+            &:nth-child(3) {
+                text-align: center;
+                padding-right: 2rem;
+            }
+            &:last-child {
+                text-align: right;
+                padding-left: 2rem;
+            }
+    
+        }
+        tbody {
+    
+        }
+        .body__tr {
+            transition: 0.3s;
+            
+
+            &:hover {
+                background: $coolGray-900;
+            } 
+            
+    
+        }
+        .body__td {
+            border-bottom: 1px solid $coolGray-300;
+            width: 100%;
+            padding: 1rem 0;
+            color: $coolGray-300;
+
+            &:first-child {
+                text-align: left;
+            }
+            &:nth-child(2) {
+                text-align: right;
+                padding-right: 2rem;
+            }
+
+            &:nth-child(3) {
+                text-align: center;
+                padding-right: 2rem;
+            }
+            &:last-child {
+                text-align: right;
+            }
+
+
+            .status {
+                background-color: $coolGray-900;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+        
+            }
+            .delivered {
+                background-color: $green-700;
+                
+        
+            }
+            .pending {
+                background-color: $sky-700;
+        
+            }
+            .return {
+                background-color: $rose-600;
+        
+            }
+            .inprogress {
+                background-color: $lime-600;
+            }
+
+    
+        }
+        
+    
+    }
+}

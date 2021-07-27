@@ -1,0 +1,496 @@
+/*** variables sass - color ***/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/**** font-size, font-weight, line-height, ***with map-get ** sass method ****/
+/**** border ** border-radius ***/
+/******box-shadow *****sass ** map-get method ***/
+/********  Transition-delay ********/
+.cardBox {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.3rem;
+  padding: 2rem;
+}
+
+.cardBox__card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #374151;
+  padding: 2rem;
+  cursor: pointer;
+  color: #D1D5DB;
+  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+}
+
+.cardBox__numbers {
+  font-size: 2rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.cardBox__numbers:hover {
+  color: #14B8A6;
+}
+
+.cardBox__name {
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  margin-top: 1.3rem;
+  transition: 0.3s;
+}
+
+.cardBox__name:hover {
+  color: #14B8A6;
+}
+
+.cardBox__icon {
+  font-size: 2rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cardBox__icon:hover {
+  color: #14B8A6;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container .navigation {
+  position: fixed;
+  width: 20rem;
+  height: 100%;
+  background-color: #1F2937;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container .navigation__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container .navigation__list {
+  position: relative;
+  width: 100%;
+  padding: 0 0.6rem;
+}
+
+.container .navigation__list:hover {
+  background-color: #4B5563;
+}
+
+.container .navigation__list:nth-child(1) {
+  background-color: transparent;
+  color: transparent;
+}
+
+.container .navigation__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  color: #D1D5DB;
+}
+
+.container .navigation__link:hover {
+  color: #D1D5DB;
+}
+
+.container .navigation__icon {
+  position: relative;
+  display: block;
+  min-width: 5rem;
+  height: 4.3rem;
+  line-height: 4.3rem;
+  text-align: center;
+}
+
+.container .navigation__title {
+  height: 4.3rem;
+  line-height: 4.3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.container .navigation i {
+  font-size: 1.5rem;
+}
+
+.container .navigation h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+}
+
+.container .navigation.active {
+  width: 5rem;
+}
+
+.recentCustomers {
+  position: relative;
+  background: #374151;
+  padding: 2rem;
+}
+
+.recentCustomers h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.3rem;
+  color: #D1D5DB;
+  margin-bottom: 4rem;
+}
+
+.recentCustomers td {
+  padding: 0.5rem 0.9rem;
+}
+
+.recentCustomers .recentCustomers__img {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.recentCustomers img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recentCustomers h4 {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #D1D5DB;
+}
+
+.recentCustomers span {
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  color: #9CA3AF;
+  margin-top: 0.9rem;
+}
+
+.details {
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+}
+
+.details .recentOrders {
+  position: relative;
+  padding: 2rem;
+  min-height: 30rem;
+  background: #374151;
+}
+
+.details .recentOrders .cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+.details .recentOrders h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #D1D5DB;
+}
+
+.details .recentOrders .btn {
+  background-color: #6B7280;
+  color: #E5E7EB;
+  padding: 0.3rem 0.9rem;
+  border-radius: 0.3rem;
+}
+
+.details .recentOrders table {
+  position: relative;
+  border-collapse: collapse;
+  margin-top: 0.9rem;
+}
+
+.details .recentOrders .header__tr {
+  border-bottom: 1px solid #E5E7EB;
+  width: 100%;
+}
+
+.details .recentOrders .header__td {
+  font-weight: 600;
+  padding-bottom: 0.9rem;
+  width: 100%;
+  color: #D1D5DB;
+}
+
+.details .recentOrders .header__td:first-child {
+  text-align: left;
+}
+
+.details .recentOrders .header__td:nth-child(2) {
+  text-align: center;
+  padding-right: 2rem;
+}
+
+.details .recentOrders .header__td:nth-child(3) {
+  text-align: center;
+  padding-right: 2rem;
+}
+
+.details .recentOrders .header__td:last-child {
+  text-align: right;
+  padding-left: 2rem;
+}
+
+.details .recentOrders .body__tr {
+  transition: 0.3s;
+}
+
+.details .recentOrders .body__tr:hover {
+  background: #111827;
+}
+
+.details .recentOrders .body__td {
+  border-bottom: 1px solid #D1D5DB;
+  width: 100%;
+  padding: 1rem 0;
+  color: #D1D5DB;
+}
+
+.details .recentOrders .body__td:first-child {
+  text-align: left;
+}
+
+.details .recentOrders .body__td:nth-child(2) {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.details .recentOrders .body__td:nth-child(3) {
+  text-align: center;
+  padding-right: 2rem;
+}
+
+.details .recentOrders .body__td:last-child {
+  text-align: right;
+}
+
+.details .recentOrders .body__td .status {
+  background-color: #111827;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.details .recentOrders .body__td .delivered {
+  background-color: #15803D;
+}
+
+.details .recentOrders .body__td .pending {
+  background-color: #0369A1;
+}
+
+.details .recentOrders .body__td .return {
+  background-color: #E11D48;
+}
+
+.details .recentOrders .body__td .inprogress {
+  background-color: #65A30D;
+}
+
+.main {
+  position: relative;
+  width: calc(100% - 20rem);
+  min-height: 100vh;
+  background-color: #6B7280;
+  left: 20rem;
+  transition: 0.5s;
+}
+
+.main .topbar {
+  width: 100%;
+  height: 5rem;
+  background-color: #4B5563;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.6rem;
+}
+
+.main .topbar__search {
+  position: relative;
+  width: 20rem;
+  margin: 0 0.9rem;
+}
+
+.main .topbar label {
+  position: relative;
+  width: 100%;
+}
+
+.main .topbar input {
+  width: 100%;
+  height: 2rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 2rem;
+  outline: none;
+  border: 3px solid #6B7280;
+  font-size: 0.9rem;
+  padding-left: 2rem;
+}
+
+.main .topbar i {
+  position: absolute;
+  left: 0.9rem;
+  top: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.main .topbar__user {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main .topbar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main .topbar .toggle {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #6B7280;
+  cursor: pointer;
+}
+
+.main .topbar .toggle .fas {
+  font-size: 2rem;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  line-height: 4rem;
+  color: #374151;
+}
+
+.main.active {
+  width: calc(100% - 4rem);
+  left: 4rem;
+}
+
+@media (max-width: 992px) {
+  .navigation {
+    left: -20rem;
+  }
+  .navigation.active {
+    width: 20rem;
+    left: 0;
+  }
+  .main {
+    width: 100%;
+    left: 0;
+  }
+  .main.active {
+    width: calc(100% - 20rem);
+    left: 20rem;
+  }
+  .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardBox {
+    grid-template-columns: 1fr;
+  }
+  .details .recentOrders table {
+    width: 4rem;
+  }
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+  .navigation.active {
+    width: 100%;
+    left: 0;
+  }
+  .toggle.active {
+    position: fixed;
+    z-index: 10000;
+    right: 0;
+    left: initial;
+  }
+  .toggle.active:before {
+    color: #374151;
+  }
+  main, main.active {
+    width: 100%;
+    left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
